@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './Components/Navbar';
 import './App.css';
-import Home from './components/pages/Home';
+import Home from './Components/Pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Services from './components/pages/Services';
-import Products from './components/pages/Products';
-import SignUp from './components/pages/SignUp';
+import Services from './Components/Pages/Services';
+import Products from './Components/Pages/Products';
+import SignUp from './Components/Pages/SignUp';
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/'exact component={Home} />
-          <Route path='/services' component={Services} />
-          <Route path='/products' component={Products} />
-          <Route path='/sign-up' component={SignUp} />
+          <Route path='/Services' component={Services} />
+          <Route path='/Products' component={Products} />
+          <Route path='/Sign-up' component={SignUp} />
         </Switch>
       </Router>
     </>
